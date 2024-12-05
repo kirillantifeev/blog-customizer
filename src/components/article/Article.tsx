@@ -5,10 +5,15 @@ import plane from 'src/images/plane.png';
 import { Text } from 'src/ui/text';
 
 import styles from './Article.module.scss';
+import { useRef } from 'react';
 
 export const Article = () => {
+	const refBackground = useRef(null);
+
+	refBackground;
+
 	return (
-		<article className={clsx(styles.article)}>
+		<article ref={refBackground} className={clsx(styles.article)}>
 			<Text as='h1' size={45} weight={800} uppercase dynamicLite>
 				Портрет Западной Швейцарии
 			</Text>
