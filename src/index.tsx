@@ -17,16 +17,16 @@ const App = () => {
 	const [backgroundColor, setBackgroundColor] = useState(
 		defaultArticleState.fontSizeOption.value
 	);
-	const [fontSize, setfontSize] = useState(
+	const [fontSize, setFontSize] = useState(
 		defaultArticleState.fontSizeOption.value
 	);
-	const [fontFamily, setfontFamily] = useState(
+	const [fontFamily, setFontFamily] = useState(
 		defaultArticleState.fontFamilyOption.value
 	);
-	const [containerWidth, setcontainerWidth] = useState(
+	const [containerWidth, setContainerWidth] = useState(
 		defaultArticleState.contentWidth.value
 	);
-	const [fontColor, setfontColor] = useState(
+	const [fontColor, setFontColor] = useState(
 		defaultArticleState.fontColor.value
 	);
 
@@ -44,10 +44,10 @@ const App = () => {
 			}>
 			<ArticleParamsForm
 				setBackgroundColor={setBackgroundColor}
-				setfontSize={setfontSize}
-				setfontFamily={setfontFamily}
-				setcontainerWidth={setcontainerWidth}
-				setfontColor={setfontColor}
+				setFontSize={setFontSize}
+				setFontFamily={setFontFamily}
+				setContainerWidth={setContainerWidth}
+				setFontColor={setFontColor}
 			/>
 			<Article />
 		</main>
